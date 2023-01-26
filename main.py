@@ -55,7 +55,6 @@ for index, row in input_data.iterrows():
         logging.error(str(e))
         continue
 
-
 logging.info("Outputting results...")
 pd.DataFrame(output_data).to_csv("./data/output.csv", encoding="utf-8", index=False)
 logging.info("Results written successfully!")
